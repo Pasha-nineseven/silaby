@@ -1,0 +1,44 @@
+@import "variables";
+
+// Подключение нужных SCSS исходников Bootstrap
+// Required
+// @import "../../../node_modules/bootstrap/scss/functions";
+
+
+// // Required
+// @import "../../../node_modules/bootstrap/scss/variables";
+// @import "../../../node_modules/bootstrap/scss/mixins";
+
+// // Optional Bootstrap components here
+// @import "../../../node_modules/bootstrap/scss/root";
+// @import "../../../node_modules/bootstrap/scss/reboot";
+// @import "../../../node_modules/bootstrap/scss/type";
+
+// @import "../../../node_modules/bootstrap/scss/images";
+// @import "../../../node_modules/bootstrap/scss/containers";
+// @import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+// etc
+
+
+
+
+
+
+// Подключение своих SCSS файлов
+@import "components/body";
+@import "components/header";
+@import "components/sidebar";
+@import "components/signin";
+@import "style";
+
+
+//PAGES
+@import "pages/index";
+
+//COMPONENTS
+@import "components/footer";
+@import "components/media";
+
+
+

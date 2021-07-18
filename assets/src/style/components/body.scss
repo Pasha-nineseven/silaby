@@ -1,0 +1,47 @@
+html{
+    height: 100%;
+    -ms-text-size-adjust: 100%;
+  	-webkit-text-size-adjust: 100%;
+  	box-sizing: border-box;
+}
+
+
+*:focus {
+	outline: none;
+	-moz-outline-style: none;
+}
+
+:-moz-any-link:focus {
+	outline: 1px dotted invert;
+}
+
+:-moz-any-link:focus {
+	outline: none;
+}
+
+textarea,input {
+	box-shadow:none;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+textarea,input {
+	box-shadow: none;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+
+::-webkit-input-placeholder {color:#a5a8ab;transition:all 0.3s ease;}
+::-moz-placeholder          {color:#a5a8ab;transition:all 0.3s ease;}
+:-moz-placeholder           {color:#a5a8ab;transition:all 0.3s ease;}
+:-ms-input-placeholder      {color:#a5a8ab;transition:all 0.3s ease;}
+
+
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}

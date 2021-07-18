@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/sidebar.html
+		<main class="main">
+			//= template/header.html
+
+			<div class="content">
+                <h1 class="h3 mb-3">Пользователи</h1>
+                <div class="btn-toolbar justify-content-between users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
+                    <button type="button" class="btn btn-outline-primary">Настроить колонки</button>
+                    <button type="button" class="btn btn-primary">Добавить пользователя</button>
+                </div>
+                <form action="#" method="post">
+                    <div class="table-wrap">
+                        <table class="table table-bordered table-users">
+                            <tr>
+                                <th scope="col">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault0">
+                                </th>
+                                <th scope="col">I</th>
+                                <th scope="col">Логин</th>
+                                <th scope="col">Фамилия</th>
+                                <th scope="col">Имя</th>
+                                <th scope="col">Последний вход</th>
+                                <th scope="col">Роль</th>
+                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                </td>
+                                <th>1</th>
+                                <td>Alex.k@sila.by</td>
+                                <td>Крылов</td>
+                                <td>Александр</td>
+                                <td>21.06.2029 12:23</td>
+                                <td>Администратор</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                </td>
+                                <th>2</th>
+                                <td>lasex@sila.by</td>
+                                <td>Петрова</td>
+                                <td>Ирина</td>
+                                <td>21.06.2029 12:23</td>
+                                <td>Редактор</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                </td>
+                                <th>3</th>
+                                <td>admin@sila.by</td>
+                                <td>Сутянин</td>
+                                <td>Иван</td>
+                                <td>Не выполнялся</td>
+                                <td>Администратор</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="btn-toolbar justify-content-between users-result">
+                        <div class="users-result__pre">
+                            <div class="users-result__actions">
+                                <span>C выбранными:</span>
+                                <select class="form-select" aria-label="Default select">
+                                    <option value="Удалить">Удалить</option>
+                                    <option value="Удалить2">Удалить2</option>
+                                    <option value="Удалить3">Удалить3</option>
+                                </select>
+                                <input class="btn btn-primary" type="submit" value="Применить">
+                            </div>
+                        </div>
+                        <div class="show-add">
+                            <span>Показывать по: </span>
+                            <select class="form-select" aria-label="Default select">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <div class="btn-toolbar justify-content-between users-pagination-toolbar">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#">Назад</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Вперед</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="users-total">
+                        Всего элементов: <span>7781</span>
+                    </div>
+                </div>
+            </div>
+		</main>
+	</div><!-- END LAYOUT-->
+
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/interface.js"></script>
+</body>
+</html>

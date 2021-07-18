@@ -1,0 +1,29 @@
+// /*FONT-FAMILY*/
+// $default-font:Arial, sans-serif;
+
+// /*FONT-SIZE*/
+// $default-size-font: 18px;
+
+// /*BACKGROUND*/
+// $default-site-bg: #fff;
+// $alt-site-bg: #7A1774;
+
+// //$default-bg: #eeeeee;
+
+// /*TEXT-COLOR*/
+// $base-color: #22140B;
+
+// $alt-color: #7A1774;
+
+// Default variable overrides
+$body-bg: #f5f5f5;
+$body-color: #111111;
+
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px
+);
