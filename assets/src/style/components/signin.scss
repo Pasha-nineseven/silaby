@@ -47,3 +47,16 @@
 	}
 }
 
+.users-popup-column{
+	display: flex;
+    flex-wrap: wrap;
+    padding: 2px 0;
+	.list-group-item{
+		width: 25%;
+		margin-bottom: -1px;
+		margin-right: -1px;
+		&+.list-group-item {
+			border-top-width: 1px;
+		}
+	}
+}

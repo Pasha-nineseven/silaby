@@ -8,8 +8,12 @@
 }
 
 //MEDIA
-@media screen and (max-width: 1024px){
-    
+@media screen and (max-width: 1200px){
+    .users-popup-column{
+        .list-group-item{
+            width: 33.333333%;
+        }
+    }
 }
 
 @media screen and (max-width: 992px){
@@ -43,6 +47,11 @@
     .top-search{
         margin-top: 1rem;
     }
+    .users-popup-column{
+        .list-group-item{
+            width: 50%;
+        }
+    }
 }
 @media (max-width: 767.98px){
     .content {
@@ -63,5 +72,13 @@
     }
     .mobile-pre-message{
         min-width: 120px;
+    }
+}
+
+@media (max-width: 500px){
+    .users-popup-column{
+        .list-group-item{
+            width: 100%;
+        }
     }
 }

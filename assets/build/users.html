@@ -15,7 +15,7 @@
 	<!--LAYOUT-->
 	<div class="layout">
 		<div class="flex-shrink-0 p-3 sidebar">
-		    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-primary text-decoration-none border-bottom">
+		    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-white text-decoration-none border-bottom">
 		        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
 		        <span class="fs-6 fw-semibold sidebar-txt">Sidebar</span>
 		    </a>
@@ -26,9 +26,9 @@
 		        </button>
 		        <div class="collapse" id="home-collapse">
 		            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		                <li><a href="#" class="link-primary rounded">Overview</a></li>
-		                <li><a href="#" class="link-primary rounded">Updates</a></li>
-		                <li><a href="#" class="link-primary rounded">Reports</a></li>
+		                <li><a href="#" class="link-white rounded">Overview</a></li>
+		                <li><a href="#" class="link-white rounded">Updates</a></li>
+		                <li><a href="#" class="link-white rounded">Reports</a></li>
 		            </ul>
 		        </div>
 		    </li>
@@ -38,10 +38,10 @@
 		        </button>
 		        <div class="collapse" id="dashboard-collapse">
 		            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		                <li><a href="#" class="link-primary rounded">Overview</a></li>
-		                <li><a href="#" class="link-primary rounded">Weekly</a></li>
-		                <li><a href="#" class="link-primary rounded">Monthly</a></li>
-		                <li><a href="#" class="link-primary rounded">Annually</a></li>
+		                <li><a href="#" class="link-white rounded">Overview</a></li>
+		                <li><a href="#" class="link-white rounded">Weekly</a></li>
+		                <li><a href="#" class="link-white rounded">Monthly</a></li>
+		                <li><a href="#" class="link-white rounded">Annually</a></li>
 		            </ul>
 		        </div>
 		    </li>
@@ -51,10 +51,10 @@
 		        </button>
 		        <div class="collapse" id="orders-collapse">
 		            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		                <li><a href="#" class="link-primary rounded">New</a></li>
-		                <li><a href="#" class="link-primary rounded">Processed</a></li>
-		                <li><a href="#" class="link-primary rounded">Shipped</a></li>
-		                <li><a href="#" class="link-primary rounded">Returned</a></li>
+		                <li><a href="#" class="link-white rounded">New</a></li>
+		                <li><a href="#" class="link-white rounded">Processed</a></li>
+		                <li><a href="#" class="link-white rounded">Shipped</a></li>
+		                <li><a href="#" class="link-white rounded">Returned</a></li>
 		            </ul>
 		        </div>
 		    </li>
@@ -65,10 +65,10 @@
 		        </button>
 		        <div class="collapse" id="account-collapse">
 		            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-		                <li><a href="#" class="link-primary rounded">New...</a></li>
-		                <li><a href="#" class="link-primary rounded">Profile</a></li>
-		                <li><a href="#" class="link-primary rounded">Settings</a></li>
-		                <li><a href="#" class="link-primary rounded">Sign out</a></li>
+		                <li><a href="#" class="link-white rounded">New...</a></li>
+		                <li><a href="#" class="link-white rounded">Profile</a></li>
+		                <li><a href="#" class="link-white rounded">Settings</a></li>
+		                <li><a href="#" class="link-white rounded">Sign out</a></li>
 		            </ul>
 		        </div>
 		    </li>
@@ -313,7 +313,7 @@
 
 
             <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -322,159 +322,151 @@
                         </div>
                         <div class="modal-body">
                             <div class="list-group">
-                                <div class="row">
-                                    <div class="col users-popup-column">
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            ID
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Название
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Разделы
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Тип товара
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Начало активности
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Окончание активности
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Активность
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Сортировка
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Кем изменен (имя)
-                                        </label>
-                                    </div>
-                                    <div class="col users-popup-column">
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Название
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Разделы
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Тип товара
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Начало активности
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Окончание активности
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Активность
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Сортировка
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Тип товара
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Начало активности
-                                        </label>
-                                    </div>
-                                    <div class="col users-popup-column">
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            ID
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Название
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Разделы
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Тип товара
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Начало активности
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Окончание активности
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Активность
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Сортировка
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Кем изменен (имя)
-                                        </label>
-                                    </div>
-                                    <div class="col users-popup-column">
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Тип товара
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Начало активности
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Окончание активности
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Активность
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Сортировка
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Кем изменен (имя)
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Тип товара
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Начало активности
-                                        </label>
-                                        <label class="list-group-item">
-                                            <input class="form-check-input me-1" type="checkbox" value="">
-                                            Тип товара
-                                        </label>
-                                    </div>
+                                <div class="users-popup-column">
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        ID
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Название
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Разделы
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Тип товара
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Начало активности
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Окончание активности
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Активность
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Сортировка
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Кем изменен (имя)
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Название
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Разделы
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Тип товара
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Начало активности
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Окончание активности
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Активность
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Сортировка
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Тип товара
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Начало активности
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        ID
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Название
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Разделы
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Тип товара
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Начало активности
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Окончание активности
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Активность
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Сортировка
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Кем изменен (имя)
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Тип товара
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Начало активности
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Окончание активности
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Активность
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Сортировка
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Кем изменен (имя)
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Тип товара
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Начало активности
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                        Тип товара
+                                    </label>
                                 </div>
                                 
                             </div>
