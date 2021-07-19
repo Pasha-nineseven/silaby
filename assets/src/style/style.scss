@@ -7,6 +7,7 @@
     display: flex;
     width: 100%;
 	overflow: hidden;
+	min-height: 100%;
 }
 .main{
 	display: flex;
@@ -36,6 +37,30 @@
 //USERS
 .table-users{
 	margin-bottom: 0;
+	background: #fff;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+    border-collapse: separate;
+    border: 0;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-style: hidden;
+	tr{
+		border-color: #dee2e6;
+		&:first-child{
+			border-top-left-radius: .25rem;
+			border-top-right-radius: .25rem;
+		}
+		&.active{
+			td,th{
+				background: $yellow-100;
+			}
+		}
+	}
+	td,th{
+		transition: background .3s ease;
+		border-color: #dee2e6;
+	}
 }
 .users-toolbar{
 	.btn{
@@ -72,9 +97,11 @@
 }
 .users-result{
 	align-items: center;
-    background: #ccc;
+    background: $gray-200;
     margin-bottom: 1rem;
     padding: 0.5rem;
+	border-bottom-left-radius: .25rem;
+	border-bottom-right-radius: .25rem;
 }
 .users-result__actions{
 	display: flex;
@@ -89,7 +116,6 @@
 }
 
 .table-wrap{
-    overflow-x: auto;
     width: 100%;
     table{
         margin-bottom: 0;
@@ -109,4 +135,21 @@
 	   border-radius: 20px;
 	   background: #0d6efd;
    	}
+}
+
+.users-dropdown-toggle{
+	border:0;
+	padding: 0;
+	color: #000;
+    background: transparent;
+	svg{
+		display: block;
+		fill: #000;
+	}
+}
+
+.users-td-action{
+	width: 50px;
+	padding: 0;
+	text-align: center;
 }

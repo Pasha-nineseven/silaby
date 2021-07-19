@@ -4,7 +4,9 @@ html{
   	-webkit-text-size-adjust: 100%;
   	box-sizing: border-box;
 }
-
+body{
+	height: 100%;
+}
 
 *:focus {
 	outline: none;

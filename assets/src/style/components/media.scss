@@ -8,7 +8,18 @@
 }
 
 //MEDIA
+@media screen and (max-width: 1024px){
+    
+}
+
 @media screen and (max-width: 992px){
+    .users-popup-column{
+        min-width: 100%;
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
     .sidebar{
         margin-left: -260px;
         &.collapsed{
@@ -29,10 +40,28 @@
     // body{
     //     overflow-y: scroll;
     // }
-    
+    .top-search{
+        margin-top: 1rem;
+    }
 }
 @media (max-width: 767.98px){
     .content {
         padding: 20px;
+    }
+    .table-wrap{
+        overflow-x: auto;
+    }
+
+    .table-users{
+        .dropdown-item {
+            padding: .15rem 0.5rem;
+            font-size: 13px;
+        }
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .mobile-pre-message{
+        min-width: 120px;
     }
 }
