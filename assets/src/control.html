@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/sidebar.html
+		<main class="main">
+			//= template/header.html
+			<div class="content">
+                <h1 class="h3 mb-3">Управление товарным каталогом</h1>
+                <div class="btn-toolbar justify-content-between align-items-center users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
+                    <a href="#" class="btn-toolbar-back">
+                        <i class="btn-toolbar-back__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                            </svg>
+                        </i>
+                        Назад в список
+                    </a>
+                    <div class="btn-toolbar-group">
+                        <button type="button" class="btn btn-outline-primary">
+                            Применить
+                        </button>
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Настройка пользователя</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">SEO настройки</a>
+                        </li>
+                    </ul>
+                    <div class="control-view">
+                        <div class="control-view__main">
+                            <h5>Основное</h5>
+                            <form action="#" method="post">
+                                <div class="row mb-3">
+                                    <label for="inputEmail3" class="col-xl-3 col-form-label">Логин</label>
+                                    <div class="col-xl-9">
+                                        <input type="email" class="form-control" id="inputEmail3" value="admin@sila.by">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputEmail3" class="col-xl-3 col-form-label">Имя</label>
+                                    <div class="col-xl-9">
+                                        <input type="text" class="form-control" id="inputName3" value="Иван">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputEmail3" class="col-xl-3 col-form-label">Имя</label>
+                                    <div class="col-xl-9">
+                                        <input type="text" class="form-control" id="inputSurName3" value="Сутянин">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputEmail3" class="col-xl-3 col-form-label">Телефон</label>
+                                    <div class="col-xl-9">
+                                        <input type="tel" class="form-control" id="inputPhone3">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="inputEmail3" class="col-xl-3 col-form-label">Задать новый пароль</label>
+                                    <div class="col-xl-6">
+                                        <input type="tel" class="form-control" id="inputPass3">
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputEmail3" class="col-xl-3 col-form-label">Роли доступа</label>
+                                    <div class="col-xl-4">
+                                        <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
+                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked="">
+                                            <label class="btn btn-primary" for="vbtn-radio1">Администратор</label>
+                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
+                                            <label class="btn btn-primary" for="vbtn-radio2">Редактор</label>
+                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
+                                            <label class="btn btn-primary" for="vbtn-radio3">Сеошник</label>
+                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off" checked>
+                                            <label class="btn btn-primary" for="vbtn-radio4">Менеджер</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="control-view__settings">
+                            <h5>Настройки</h5>
+                            <div class="control-view__id">
+                                ID: 1
+                            </div>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                Активен
+                            </label>
+                            <div class="control-view__act">
+                                Последняя активность:
+                                21.0602021 14:12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-toolbar justify-content-between align-items-center users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
+                    <a href="#" class="btn-toolbar-back">
+                        <i class="btn-toolbar-back__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                            </svg>
+                        </i>
+                        Назад в список
+                    </a>
+                    <div class="btn-toolbar-group">
+                        <button type="button" class="btn btn-outline-primary">
+                            Применить
+                        </button>
+                        <button type="button" class="btn btn-primary">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+
+		</main>
+	</div><!-- END LAYOUT-->
+
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/interface.js"></script>
+</body>
+</html>

@@ -8,6 +8,15 @@
 }
 
 //MEDIA
+@media screen and (max-width: 1300px){
+    .control-view__settings{
+        width: 300px;
+    }
+    .control-view__main{
+        margin-right: 1rem;
+    }
+}
+
 @media screen and (max-width: 1200px){
     .users-popup-column{
         .list-group-item{
@@ -72,6 +81,24 @@
     }
     .mobile-pre-message{
         min-width: 120px;
+    }
+}
+
+
+@media (max-width: 600px){
+    .control-view{
+        flex-wrap:wrap;
+        .btn-group-vertical{
+            display: flex;
+        }
+    }
+    .control-view__main {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .control-view__settings{
+        width: 100%;
     }
 }
 
