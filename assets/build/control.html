@@ -17,7 +17,7 @@
 		<div class="flex-shrink-0 p-3 sidebar">
 		    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-white text-decoration-none border-bottom">
 		        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-		        <span class="fs-6 fw-semibold sidebar-txt">Sidebar</span>
+		        <span class="fs-6 fw-semibold sidebar-txt">УТК</span>
 		    </a>
 		    <ul class="list-unstyled ps-0">
 		    <li class="mb-1">
@@ -140,89 +140,218 @@
                         Назад в список
                     </a>
                     <div class="btn-toolbar-group">
-                        <button type="button" class="btn btn-outline-primary">
-                            Применить
-                        </button>
-                        <button type="button" class="btn btn-primary">Сохранить</button>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-primary">Применить</button>
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
                     </div>
                 </div>
 
                 <div class="control">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Настройка пользователя</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">SEO настройки</a>
-                        </li>
-                    </ul>
-                    <div class="control-view">
-                        <div class="control-view__main">
-                            <h5>Основное</h5>
-                            <form action="#" method="post">
-                                <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-xl-3 col-form-label">Логин</label>
-                                    <div class="col-xl-9">
-                                        <input type="email" class="form-control" id="inputEmail3" value="admin@sila.by">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-xl-3 col-form-label">Имя</label>
-                                    <div class="col-xl-9">
-                                        <input type="text" class="form-control" id="inputName3" value="Иван">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-xl-3 col-form-label">Имя</label>
-                                    <div class="col-xl-9">
-                                        <input type="text" class="form-control" id="inputSurName3" value="Сутянин">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-xl-3 col-form-label">Телефон</label>
-                                    <div class="col-xl-9">
-                                        <input type="tel" class="form-control" id="inputPhone3">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-xl-3 col-form-label">Задать новый пароль</label>
-                                    <div class="col-xl-6">
-                                        <input type="tel" class="form-control" id="inputPass3">
-                                    </div>
-                                </div>
-
-                                <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-xl-3 col-form-label">Роли доступа</label>
-                                    <div class="col-xl-4">
-                                        <div class="btn-group-vertical" role="group" aria-label="Vertical radio toggle button group">
-                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio1" autocomplete="off" checked="">
-                                            <label class="btn btn-primary" for="vbtn-radio1">Администратор</label>
-                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio2" autocomplete="off">
-                                            <label class="btn btn-primary" for="vbtn-radio2">Редактор</label>
-                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio3" autocomplete="off">
-                                            <label class="btn btn-primary" for="vbtn-radio3">Сеошник</label>
-                                            <input type="radio" class="btn-check" name="vbtn-radio" id="vbtn-radio4" autocomplete="off" checked>
-                                            <label class="btn btn-primary" for="vbtn-radio4">Менеджер</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                Настройка пользователя
+                            </button>
+                            <button class="nav-link" id="nav-settings-tab" data-bs-toggle="tab" data-bs-target="#nav-settings" type="button" role="tab" aria-controls="nav-settings" aria-selected="false">
+                                SEO настройки
+                            </button>
                         </div>
-                        <div class="control-view__settings">
-                            <h5>Настройки</h5>
-                            <div class="control-view__id">
-                                ID: 1
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="control-view">
+                                <div class="control-view__main">
+                                    <h5>Основное</h5>
+                                    <form action="#" method="post">
+                                        <div class="row mb-3">
+                                            <label for="inputEmail3" class="col-xl-3 col-form-label">Логин</label>
+                                            <div class="col-xl-9">
+                                                <input type="email" class="form-control" id="inputEmail3" value="admin@sila.by">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="inputEmail3" class="col-xl-3 col-form-label">Имя</label>
+                                            <div class="col-xl-9">
+                                                <input type="text" class="form-control" id="inputName3" value="Иван">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="inputEmail3" class="col-xl-3 col-form-label">Имя</label>
+                                            <div class="col-xl-9">
+                                                <input type="text" class="form-control" id="inputSurName3" value="Сутянин">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="inputEmail3" class="col-xl-3 col-form-label">Телефон</label>
+                                            <div class="col-xl-9">
+                                                <input type="tel" class="form-control" id="inputPhone3">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="inputEmail3" class="col-xl-3 col-form-label">Задать новый пароль</label>
+                                            <div class="col-xl-6">
+                                                <input type="tel" class="form-control" id="inputPass3">
+                                            </div>
+                                        </div>
+        
+                                        <div class="row mb-3">
+                                            <label for="inputEmail3" class="col-xl-3 col-form-label">Роли доступа</label>
+                                            <div class="col-xl-4">
+                                                <select class="form-select" multiple aria-label="multiple select example">
+                                                    <option value="1">Администратор</option>
+                                                    <option value="2">Редактор</option>
+                                                    <option value="3">Сеошник</option>
+                                                    <option value="4">Менеджер</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="control-view__settings">
+                                    <h5>Настройки</h5>
+                                    <div class="control-view__id">
+                                        ID: 1
+                                    </div>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                        Активен
+                                    </label>
+                                    <div class="control-view__act">
+                                        Последняя активность:
+                                        21.0602021 14:12
+                                    </div>
+                                </div>
                             </div>
-                            <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="" checked>
-                                Активен
-                            </label>
-                            <div class="control-view__act">
-                                Последняя активность:
-                                21.0602021 14:12
+                        </div>
+                        <div class="tab-pane fade" id="nav-settings" role="tabpanel" aria-labelledby="nav-settings-tab">
+                            <div class="control-view">
+                                <div class="control-view__main">
+                                    <h5>Основное</h5>
+                                    <form action="#" method="post">
+                                        <div class="mb-3">
+                                            <div class="col-xl-9">
+                                                <label for="enabledTextInput" class="form-label">Enabled input</label>
+                                                <input type="text" class="form-control" id="enabledTextInput" placeholder="Enabled input">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="col-xl-9">
+                                                <div class="form-floating">
+                                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                                    <label for="floatingTextarea">Comments</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="col-xl-9">
+                                                <fieldset disabled>
+                                                    <label for="disabledTextInput" class="form-label">Disabled input</label>
+                                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <div class="col-xl-9">
+                                                <div class="col-auto">
+                                                    <label for="inputPassword6" class="col-form-label">Password</label>
+                                                  </div>
+                                                  <div class="col-auto">
+                                                    <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                                                  </div>
+                                                  <div class="col-auto">
+                                                    <span id="passwordHelpInline" class="form-text">
+                                                      Must be 8-20 characters long.
+                                                    </span>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <div class="col-xl-9">
+                                                <div class="input-group mb-3">
+                                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <div class="col-xl-9">
+                                                <label for="exampleDataList" class="form-label">Datalist example</label>
+                                                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                                                <datalist id="datalistOptions">
+                                                    <option value="San Francisco">
+                                                    <option value="New York">
+                                                    <option value="Seattle">
+                                                    <option value="Los Angeles">
+                                                    <option value="Chicago">
+                                                </datalist>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <div class="col-xl-9">
+                                                <select class="form-select form-select-md mb-3" aria-label=".form-select-lg example">
+                                                    <option selected>Open this select menu</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="col-xl-9">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">1</label>
+                                                </div>
+                                                 <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
+                                                    <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="col-xl-9">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                                                    <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="col-xl-9">
+                                                <label for="validationServer03" class="form-label">Поле с ошибкой</label>
+                                                <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                                                <div id="validationServer03Feedback" class="invalid-feedback">
+                                                Введите правильное значение
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="control-view__settings">
+                                    <h5>Настройки</h5>
+                                    Test
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
 
                 <div class="btn-toolbar justify-content-between align-items-center users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
@@ -235,10 +364,10 @@
                         Назад в список
                     </a>
                     <div class="btn-toolbar-group">
-                        <button type="button" class="btn btn-outline-primary">
-                            Применить
-                        </button>
-                        <button type="button" class="btn btn-primary">Сохранить</button>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-primary">Применить</button>
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
                     </div>
                 </div>
             </div>
