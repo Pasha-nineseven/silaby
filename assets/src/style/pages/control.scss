@@ -23,22 +23,30 @@
     display: flex;
 }
 .control-view__settings{
-    border-radius: .25rem;
-    background: #f5f5f5;
     width: 350px;
-    padding: 1rem;
     .list-group-item{
         margin-bottom: 1rem;
     }
 }
 
 .control-view__main{
-    border-radius: .25rem;
-    background: #f5f5f5;
+    
     flex:1;
     margin-right: 1rem;
-    padding: 1rem;
+    
 }
 .control-view__id{
     margin-bottom: 1rem;
+}
+
+
+.control-in{
+    border-radius: .25rem;
+    background: #f5f5f5;
+    padding: 1rem;
+    // height: 100%;
+    margin-bottom: 1rem;
+    &:last-child{
+        margin-bottom: 0;
+    }
 }

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/sidebar.html
+		<main class="main">
+			//= template/header.html
+			<div class="content">
+                <h1 class="h3 mb-3">Управление товарным каталогом</h1>
+                <div class="btn-toolbar justify-content-between align-items-center users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
+                    <a href="#" class="btn-toolbar-back">
+                        <i class="btn-toolbar-back__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                            </svg>
+                        </i>
+                        Назад в список
+                    </a>
+                    <div class="btn-toolbar-group">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-primary">Копировать</button>
+                            <button type="button" class="btn btn-outline-primary">Применить</button>
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                Настройки товара
+                            </button>
+                            <button class="nav-link" id="nav-settings-tab" data-bs-toggle="tab" data-bs-target="#nav-settings" type="button" role="tab" aria-controls="nav-settings" aria-selected="false">
+                                SEO настройки
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="control-view">
+                                <div class="control-view__main">
+                                    <div class="control-in">
+                                        <h5>Основное</h5>
+                                        <form action="#" method="post">
+                                            <div class="row mb-3">
+                                                <label for="inputName111" class="col-xl-3 col-form-label">Название</label>
+                                                <div class="col-xl-9">
+                                                    <input type="email" class="form-control" id="inputName111" value="Телефон iPhone XS 12 черный">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputName112" class="col-xl-3 col-form-label">Символьный код</label>
+                                                <div class="col-xl-9">
+                                                    <input type="email" class="form-control" id="inputName112" value="telephone-iphone-xs-12-cherniy">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-xl-3 col-form-label">Обложка</label>
+                                                <div class="col-xl-9">
+                                                    <div class="mb-3">
+                                                        <img src="https://via.placeholder.com/300x200" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="control-in">
+                                        <h5>Аттрибуты товара</h5>
+                                        <form action="#" method="post">
+                                            <div class="row mb-3">
+                                                <label for="inputWeight3" class="col-xl-3 col-form-label">Вес, кг</label>
+                                                <div class="col-xl-9">
+                                                    <input type="text" class="form-control" id="inputWeight3" value="12">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputDirectory3" class="col-xl-3 col-form-label">Справочник</label>
+                                                <div class="col-xl-9">
+                                                    <select class="form-select" aria-label="Default select">
+                                                        <option value="Габаритный">Габаритный</option>
+                                                        <option value="Негабаритный">Негабаритный</option>
+                                                        <option value="Габаритный 3">Габаритный 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputSize3" class="col-xl-3 col-form-label">Вес, кг</label>
+                                                <div class="col-xl-9">
+                                                    <input type="text" class="form-control" id="inputSize3" value="1980x860">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label for="inputOnliner3" class="col-xl-3 col-form-label">Категория Onliner</label>
+                                                <div class="col-xl-9">
+                                                    <select class="form-select" aria-label="Default select">
+                                                        <option value="Телефоны">Телефоны</option>
+                                                        <option value="Телевизоры">Телевизоры</option>
+                                                        <option value="Унитазы">Унитазы</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputBrend3" class="col-xl-3 col-form-label">Бренд Onliner</label>
+                                                <div class="col-xl-9">
+                                                    <select class="form-select" aria-label="Default select">
+                                                        <option value="Apple">Apple</option>
+                                                        <option value="Samsung">Samsung</option>
+                                                        <option value="Xiaomi">Xiaomi 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="control-view__settings">
+                                    <div class="control-in">
+                                        <h5>Настройки</h5>
+                                        <div class="mb-3">
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                                Опубликован
+                                            </label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="goods-label">
+                                                Выбрать разделы
+                                            </div>
+                                            <select class="form-select" multiple aria-label="multiple select example">
+                                                <option value="1">Телевизоры</option>
+                                                <option value="2">Электроника</option>
+                                                <option value="3">Навигаторы</option>
+                                                <option value="5">Планшеты</option>
+                                                <option value="6">Телефоны</option>
+                                                <option value="7">Чайники</option>
+                                                <option value="8">Test</option>
+                                                <option value="9">Test</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 goods-sort">
+                                            <div class="goods-label">
+                                                Сортировка
+                                            </div>
+                                            <input type="text" class="form-control" id="inputName344" value="500">
+                                        </div>
+                                    </div>
+                                    <div class="control-in">
+                                        <h5>История обновлений</h5>
+                                        <div class="mb-3">
+                                            <div>21.06.2021</div>
+                                            <div>Изменен:</div>
+                                            <div>sasha.fk@sila.by</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div>20.06.2021</div>
+                                            <div>Создан:</div>
+                                            <div>alex.k@sila.by</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-settings" role="tabpanel" aria-labelledby="nav-settings-tab">
+                            <div class="control-view">
+                                <div class="control-view__main">
+                                    <div class="control-in">
+                                        <h5>Основное</h5>
+                                        Test
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="btn-toolbar justify-content-between align-items-center users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
+                    <a href="#" class="btn-toolbar-back">
+                        <i class="btn-toolbar-back__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                            </svg>
+                        </i>
+                        Назад в список
+                    </a>
+                    <div class="btn-toolbar-group">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-primary">Копировать</button>
+                            <button type="button" class="btn btn-outline-primary">Применить</button>
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+		</main>
+	</div><!-- END LAYOUT-->
+
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/interface.js"></script>
+</body>
+</html>
