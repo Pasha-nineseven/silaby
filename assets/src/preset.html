@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/sidebar.html
+		<main class="main">
+			//= template/header.html
+			<div class="content">
+                <h1 class="h3 mb-3">Управление товарным каталогом</h1>
+                <div class="btn-toolbar justify-content-between align-items-center users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
+                    <a href="#" class="btn-toolbar-back">
+                        <i class="btn-toolbar-back__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                            </svg>
+                        </i>
+                        Назад в список
+                    </a>
+                    <div class="btn-toolbar-group">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-primary">Применить</button>
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                               Создать пресет импорта
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="control-view">
+                                <div class="control-view__main">
+                                    <div class="control-in">
+                                        <h5>Основное</h5>
+                                        <form action="#" method="post">
+                                            <div class="row mb-3">
+                                                <label for="inputName111" class="col-xl-3 col-form-label">Файл</label>
+                                                <div class="col-xl-9">
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputName111" class="col-xl-3 col-form-label">Название импорта</label>
+                                                <div class="col-xl-9">
+                                                    <input type="text" class="form-control" id="inputName111" value="Телевизоры до 1500">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputName111" class="col-xl-3 col-form-label">Путь к директории с изображениями</label>
+                                                <div class="col-xl-9">
+                                                    <div class="row">
+                                                        <div class="col-xl-3">
+                                                            <fieldset disabled="">
+                                                                <input type="text" id="disabledTextInput22" class="form-control" placeholder="/var/www/dom/test">
+                                                            </fieldset>
+                                                        </div>
+                                                        <div class="col-xl-9">
+                                                            <input type="text" class="form-control" id="" value="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputName111" class="col-xl-3 col-form-label">CSV-разделитель</label>
+                                                <div class="col-xl-9">
+                                                    <select class="form-select" aria-label="Default select">
+                                                        <option value="Точка с запятой">Точка с запятой</option>
+                                                        <option value="Точка с точкой">Точка с точкой</option>
+                                                        <option value="test">test</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="control-in">
+                                        <h5>Таблица соответствия полей</h5>
+                                        <div class="mb-3 preset-info">
+                                            В этой таблице содержится список столбцов из импортируемого файла. Для каждого столбца, который вы хотите импортировать, выберите соответствующее свойство товара в админке.
+                                        </div>
+                                        <div class="table-wrap">
+                                            <table class="table table-bordered align-middle table-users">
+                                                <tr>
+                                                    <th scope="col">
+                                                        Название столбца из файла
+                                                    </th>
+                                                    <th scope="col">
+                                                        Свойство в админке
+                                                    </th>
+                                                    <th scope="col">
+                                                        Пример содержимого из файла
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Name
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-select" aria-label="Default select">
+                                                            <option value="Название">Название</option>
+                                                            <option value="Название 2">Название 2</option>
+                                                            <option value="Название 3">Название 3</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        Телевизор Sony
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Canonical Name
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-select" aria-label="Default select">
+                                                            <option value="Название">Название</option>
+                                                            <option value="Название 2">Название 2</option>
+                                                            <option value="Название 3">Название 3</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        Телевизор Sony N32BB
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        URL
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-select" aria-label="Default select">
+                                                            <option value="Название">Название</option>
+                                                            <option value="Название 2">Название 2</option>
+                                                            <option value="Название 3">Название 3</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        /catalog/tv
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        Status
+                                                    </td>
+                                                    <td>
+                                                        <select class="form-select" aria-label="Default select">
+                                                            <option value="Название">Название</option>
+                                                            <option value="Название 2">Название 2</option>
+                                                            <option value="Название 3">Название 3</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        Акция
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-view__settings">
+                                    <div class="control-in">
+                                        <h5>Настройки</h5>
+                                        <div class="goods-label">
+                                            Что делаем при импорте
+                                        </div>
+                                        <select class="form-select" aria-label="Default select">
+                                            <option value="Импортировать все товары">Импортировать все товары</option>
+                                            <option value="Экспортировать все товары">Экспортировать все товары</option>
+                                            <option value="test">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="btn-toolbar justify-content-between align-items-center users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
+                    <a href="#" class="btn-toolbar-back">
+                        <i class="btn-toolbar-back__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                            </svg>
+                        </i>
+                        Назад в список
+                    </a>
+                    <div class="btn-toolbar-group">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-primary">Применить</button>
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+		</main>
+	</div><!-- END LAYOUT-->
+
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/interface.js"></script>
+</body>
+</html>

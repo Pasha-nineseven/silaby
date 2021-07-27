@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/sidebar.html
+		<main class="main">
+			//= template/header.html
+
+			<div class="content">
+                <h1 class="h3 mb-3">Управление деревом каталога</h1>
+                <div class="row">
+                    <div class="col-md-3 directory-panel">
+                        <div class="parent-check">
+                            <a href="#" class="parent-check__item">
+                                Корневой раздел
+                            </a>
+                            <div class="child-check">
+                                <a href="#" class="child-check__item">
+                                    Телевизоры
+                                </a>
+                                <div class="child-check">
+                                    <a href="#" class="child-check__item">Телевизоры, аудио и фото</a>
+                                </div>
+                                <div class="child-check">
+                                    <a href="#" class="child-check__item">Фото и видеокамеры</a>
+                                </div>
+                                <div class="child-check">
+                                    <a href="#" class="child-check__item">Мультиварки</a>
+                                </div>
+                                <div class="child-check">
+                                    <a href="#" class="child-check__item">Игровые приставки</a>
+                                </div>
+                                <div class="child-check">
+                                    <a href="#" class="child-check__item">Ноутбуки</a>
+                                </div>
+                            </div>
+                            <div class="child-check">
+                                <a href="#" class="child-check__item">Бытовая техника</a>
+                            </div>
+
+                            <div class="child-check">
+                                <a href="#" class="child-check__item">Посуда и аксессуары</a>
+                            </div>
+                            <div class="child-check">
+                                <a href="#" class="child-check__item">Бытовая химия</a>
+                            </div>
+                            <div class="child-check">
+                                <a href="#" class="child-check__item">Бытовая техника</a>
+                            </div>
+                            <div class="child-check">
+                                <a href="#" class="child-check__item">Посуда и аксессуары</a>
+                            </div>
+                            <div class="child-check">
+                                <a href="#" class="child-check__item">Бытовая техника</a>
+                            </div>
+                            <div class="child-check">
+                                <a href="#" class="child-check__item">Бытовая техника</a>
+                            </div>
+                            <div class="child-check">
+                                <a href="#" class="child-check__item">Посуда и аксессуары</a>
+                            </div>
+                            <div class="child-check">
+                                <a href="#" class="child-check__item">Бытовая техника</a>
+                            </div>
+                            <div class="child-check">
+                                <a href="#" class="child-check__item">Посуда и аксессуары</a>
+                            </div>
+                        </div>
+                        <div class="parent-check">
+                            <a href="#" class="parent-check__item">
+                                Корневой раздел 2
+                            </a>
+                        </div>
+                        <div class="parent-check">
+                            <a href="#" class="parent-check__item">
+                                Корневой раздел 3
+                            </a>
+                        </div>
+                        <div class="parent-check">
+                            <a href="#" class="parent-check__item">
+                                Корневой раздел 4
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="btn-toolbar justify-content-between users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
+                            <button type="button" class="btn btn-outline-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                                </svg>
+                                <span class="mobile-hide">
+                                    Настроить колонки
+                                </span>
+                            </button>
+                            <button type="button" class="btn btn-primary">Создать раздел</button>
+                        </div>
+                        <form action="#" method="post">
+                            <div class="table-wrap">
+                                <table class="table table-bordered table-users">
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">ID  <a href="#" class="list-toggle-link m-down"></a></th>
+                                        <th scope="col">Название</th>
+                                        <th scope="col">Опубликован</th>
+                                        <th scope="col">Символьный код</th>
+                                        <th scope="col">Обложка</th>
+                                        <th scope="col">Обновлен</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                        </td>
+                                        <th>125</th>
+                                        <td class="goods-title">
+                                            Фотокамеры
+                                        </td>
+                                        <td>Да</td>
+                                        <td>xm-4012-022</td>
+                                        <td class="goods-photo">
+                                            <img src="https://via.placeholder.com/80x50" alt="">
+                                        </td>
+                                        <td>
+                                            12.07.2021
+                                            <div>12:27</div>
+                                        </td>
+                                        <td>
+                                            <a href="#">К товарам</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                        </td>
+                                        <th>125</th>
+                                        <td class="goods-title">
+                                            Видеокамеры
+                                        </td>
+                                        <td>Да</td>
+                                        <td>videocameras</td>
+                                        <td class="goods-photo">
+                                            <img src="https://via.placeholder.com/80x50" alt="">
+                                        </td>
+                                        <td>
+                                            12.07.2021
+                                            <div>12:27</div>
+                                        </td>
+                                        <td>
+                                            <a href="#">К товарам</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                        </td>
+                                        <th>125</th>
+                                        <td class="goods-title">
+                                            Штативы
+                                        </td>
+                                        <td>Да</td>
+                                        <td>its-4160-w</td>
+                                        <td class="goods-photo">
+                                            <img src="https://via.placeholder.com/80x50" alt="">
+                                        </td>
+                                        <td>
+                                            12.07.2021
+                                            <div>12:27</div>
+                                        </td>
+                                        <td>
+                                            <a href="#">К товарам</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                        </td>
+                                        <th>125</th>
+                                        <td class="goods-title">
+                                            Сумки для видеокамер
+                                        </td>
+                                        <td>Да</td>
+                                        <td>ideapad_gamin g_3_15arh_8 2ey008qre</td>
+                                        <td class="goods-photo">
+                                            <img src="https://via.placeholder.com/80x50" alt="">
+                                        </td>
+                                        <td>
+                                            12.07.2021
+                                            <div>12:27</div>
+                                        </td>
+                                        <td>
+                                            <a href="#">К товарам</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="btn-toolbar justify-content-between users-result">
+                                <div class="users-result__pre">
+                                    <div class="users-result__actions">
+                                        <span class="mobile-pre-message">C выбранными:</span>
+                                        <select class="form-select" aria-label="Default select">
+                                            <option value="Удалить">Удалить</option>
+                                            <option value="Удалить2">Редактировать</option>
+                                            <option value="Удалить3">Удалить3</option>
+                                        </select>
+                                        <input class="btn btn-primary" type="submit" value="Применить">
+                                    </div>
+                                </div>
+                                <div class="show-add">
+                                    <span class="mobile-pre-message">Показывать по: </span>
+                                    <select class="form-select" aria-label="Default select">
+                                        <option value="10">10</option>
+                                        <option value="20">20</option>
+                                        <option value="30">30</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="btn-toolbar justify-content-between users-pagination-toolbar">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Назад</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Вперед</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="users-total">
+                                Всего элементов: <span>7781</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+		</main>
+	</div><!-- END LAYOUT-->
+
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/interface.js"></script>
+</body>
+</html>

@@ -19,7 +19,39 @@ document.addEventListener('DOMContentLoaded', () =>{
 			}
 		})
 	}
+
+
+	//FILTER-TOGGLE
+	let el = document.querySelector('.js-toggle');
+	el.addEventListener('click', function (e) {
+		e.preventDefault();
+
+		el.classList.toggle('active');
+	});
+	document.addEventListener('click', function (event) {
+		if (!event.target.classList.contains('js-toggle')) return;
+		event.preventDefault();
+		var content = document.querySelector(event.target.hash);
+		if (!content) return;
+		toggle(content);
+	}, false);
+
 })
+
+var show = function (elem) {
+	elem.style.display = 'block';
+};
+var hide = function (elem) {
+	elem.style.display = 'none';
+};
+var toggle = function (elem) {
+	if (window.getComputedStyle(elem).display === 'block') {
+		hide(elem);
+		return;
+	}
+	show(elem);
+};
+
 
 
 // links pages
@@ -37,6 +69,10 @@ body.innerHTML +=
 		<li><a href="control.html">control(18)</a></li> \
 		<li><a href="role.html">role(19)</a></li> \
 		<li><a href="goods.html">goods(7)</a></li> \
-		<li><a href="goods-settings.html">goods-sett(7)</a></li> \
+		<li><a href="goods-settings.html">goods-sett(9)</a></li> \
+		<li><a href="directory.html">directory(11)</a></li> \
+		<li><a href="tag-settings.html">tag-settings(16)</a></li> \
+		<li><a href="preset.html">preset(20)</a></li> \
+		<li><a href="import.html">import(21)</a></li> \
 	</ol> \
 </div>'

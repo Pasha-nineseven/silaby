@@ -1,0 +1,43 @@
+.directory{
+    
+}
+.direct-breadcrumbs{
+    margin-bottom: 1.5rem;
+}
+
+.directory-panel{
+    .parent-check{
+        padding-left: 30px;
+        position: relative;
+        &:before{
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 16px;
+            background: url(../img/svg/folder.svg) center/cover no-repeat;
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+    }
+    .child-check{
+        padding: 0;
+        padding-left: 30px;
+        position: relative;
+        margin: 10px 0;
+        &:before{
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 16px;
+            background: url(../img/svg/folder-sub.svg) center/cover no-repeat;
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+    }
+}
+
+.parent-check__item{
+    display: block;
+}

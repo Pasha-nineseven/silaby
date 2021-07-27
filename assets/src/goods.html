@@ -13,10 +13,16 @@
 			<div class="content">
                 <h1 class="h3 mb-3">Управление каталогом</h1>
                 <div class="goods-filet-toggle">
-                    <a href="#" class="goods-filet-toggle__link">
-                        <span class="list-toggle-link m-down"></span>
-                        Развернуть фильтр
+                    <a href="#test" class="goods-filet-toggle__link js-toggle">
+                        <span class="list-toggle-link m-down"></span>Развернуть фильтр
                     </a>
+                    <div class="toggle-content" id="test">
+                        Test content for toggle filter<br>
+                        Test content for toggle filter<br>
+                        Test content for toggle filter<br>
+                        Test content for toggle filter<br>
+                        Test content for toggle filter<br>
+                    </div>
                 </div>
                 <div class="btn-toolbar justify-content-between users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
                     <button type="button" class="btn btn-outline-primary">
@@ -78,19 +84,39 @@
                                     12.07.2021 12:27
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="active">
                                 <td>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" checked>
                                 </td>
                                 <th>125</th>
                                 <td class="goods-title">
-                                    Двухкамерный холодильник INDESIT
+                                    <input type="text" class="form-control" id="inputName111" value="Двухкамерный холодильник INDESIT">
                                 </td>
-                                <td>Да</td>
-                                <td>INDESIT</td>
-                                <td>xm-4012-022</td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select">
+                                        <option value="Точка с запятой">Да</option>
+                                        <option value="Точка с точкой">Нет</option>
+                                        <option value="test">Не знаю</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select">
+                                        <option value="Точка с запятой">INDESIT</option>
+                                        <option value="Точка с точкой">ATLANT</option>
+                                        <option value="test">BOSH</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-select" aria-label="Default select">
+                                        <option value="Точка с запятой">xm-4012-022</option>
+                                        <option value="Точка с точкой">xm-4012-023</option>
+                                        <option value="test">xm-4012-024</option>
+                                    </select>
+                                    
+                                </td>
                                 <td class="goods-photo">
-                                    <img src="https://via.placeholder.com/80x50" alt="">
+                                    <!-- <img src="https://via.placeholder.com/80x50" alt=""> -->
+                                    <input type="file" class="form-control" id="inputGroupFile01">
                                 </td>
                                 <td>
                                     12.07.2021 12:27

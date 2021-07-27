@@ -82,6 +82,9 @@
     .mobile-pre-message{
         min-width: 120px;
     }
+    .directory-panel{
+        margin-bottom: 2rem;
+    }
 }
 
 
@@ -99,6 +102,9 @@
     }
     .control-view__settings{
         width: 100%;
+    }
+    .direct-breadcrumbs{
+        flex:inherit;
     }
 }
 
