@@ -58,24 +58,27 @@ var toggle = function (elem) {
 
 
 // links pages
-// const body = document.querySelector('body');
-// body.innerHTML +=
-// 	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 150px;"> \
-// 	<style> \
-// 		#pages { padding: 0 10px 0 35px; font-size: 14px;margin: 28px 0 10px 0px } \
-// 		#pages a { text-decoration: none; } \
-// 		#pages li { margin: 5px 0; } \
-// 	</style> \
-// 	<ol id="pages"> \
-// 		<li><a href="authoriz.html">authoriz(1)</a></li> \
-// 		<li><a href="users.html">users(17)</a></li> \
-// 		<li><a href="control.html">control(18)</a></li> \
-// 		<li><a href="role.html">role(19)</a></li> \
-// 		<li><a href="goods.html">goods(7)</a></li> \
-// 		<li><a href="goods-settings.html">goods-sett(9)</a></li> \
-// 		<li><a href="directory.html">directory(11)</a></li> \
-// 		<li><a href="tag-settings.html">tag-settings(16)</a></li> \
-// 		<li><a href="preset.html">preset(20)</a></li> \
-// 		<li><a href="import.html">import(21)</a></li> \
-// 	</ol> \
-// </div>'
+const body = document.querySelector('body');
+body.innerHTML +=
+	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 150px;"> \
+	<style> \
+		#pages { padding: 0 10px 0 35px; font-size: 14px;margin: 28px 0 10px 0px } \
+		#pages a { text-decoration: none; } \
+		#pages li { margin: 5px 0; } \
+	</style> \
+	<ol id="pages"> \
+		<li><a href="authoriz.html">authoriz(1)</a></li> \
+		<li><a href="goods.html">goods(7)</a></li> \
+		<li><a href="goods-settings.html">goods-sett(9)</a></li> \
+		<li><a href="directory.html">directory(11)</a></li> \
+		<li><a href="chapter-settings.html">chapter-sett(12)</a></li> \
+		<li><a href="chars.html">chars(15)</a></li> \
+		<li><a href="attr-settings.html">attr-settings(16)</a></li> \
+		<li><a href="users.html">users(17)</a></li> \
+		<li><a href="tag-settings.html">tag-settings(18)</a></li> \
+		<li><a href="role.html">role(19)</a></li> \
+		<li><a href="control.html">control(20)</a></li> \
+		<li><a href="preset.html">preset(20)</a></li> \
+		<li><a href="import.html">import(21)</a></li> \
+	</ol> \
+</div>'

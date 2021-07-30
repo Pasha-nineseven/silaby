@@ -33,7 +33,7 @@
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-                                Настройки тега
+                                Настройки аттрибута
                             </button>
                         </div>
                     </nav>
@@ -47,87 +47,103 @@
                                             <div class="row mb-3">
                                                 <label for="inputName111" class="col-xl-3 col-form-label">Название</label>
                                                 <div class="col-xl-9">
-                                                    <input type="text" class="form-control" id="inputName111" value="Телевизоры до 1500">
+                                                    <input type="text" class="form-control" id="inputName111" value="Цвет">
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
-                                                <label for="inputName112" class="col-xl-3 col-form-label">URL страницы</label>
+                                                <label for="inputName112" class="col-xl-3 col-form-label">Символьный код</label>
                                                 <div class="col-xl-9">
-                                                    <input type="text" class="form-control" id="inputName112" value="/catalog/tv/low-1500">
+                                                    <input type="text" class="form-control" id="inputName112" value="COLOR">
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
-                                                <label for="inputName112" class="col-xl-3 col-form-label">Поисковый запрос на подмену</label>
+                                                <label class="col-xl-3 col-form-label">Тип свойства</label>
+                                                <div class="col-xl-6">
+                                                    <select class="form-select" aria-label="Default select">
+                                                        <option value="Справочник">Справочник</option>
+                                                        <option value="Справочник 2">Справочник 2</option>
+                                                        <option value="Справочник 3">Справочник 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputtest18" class="col-xl-3 col-form-label">Значения справочника</label>
                                                 <div class="col-xl-9">
-                                                    <input type="text" class="form-control" id="inputName112" value="/filter/vid_izdeliya-is-plitka/meterial-is-keramicheskaya_plitka/dlina_">
+                                                    <div class="row">
+                                                        <div class="col direct-breadcrumbs">
+                                                            <input type="text" class="form-control" id="inputtest18" value="Синий">
+                                                        </div>
+                                                        <div class="col direct-breadcrumbs">
+                                                            <input type="text" class="form-control" id="inputtest19" value="blue">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col direct-breadcrumbs">
+                                                            <input type="text" class="form-control" id="inputtest19" value="Зеленый">
+                                                        </div>
+                                                        <div class="col direct-breadcrumbs">
+                                                            <input type="text" class="form-control" id="inputtest20" value="green">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col direct-breadcrumbs">
+                                                            <input type="text" class="form-control" id="inputtest21" value="Красный">
+                                                        </div>
+                                                        <div class="col direct-breadcrumbs">
+                                                            <input type="text" class="form-control" id="inputtest22" value="red">
+                                                        </div>
+                                                    </div>
+                                                    <button type="button" class="btn btn-outline-primary">Еще</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-xl-3 col-form-label">Значение по умолчанию</label>
+                                                <div class="col-xl-6">
+                                                    <select class="form-select" aria-label="Default select">
+                                                        <option value="Не задано">Не задано</option>
+                                                        <option value="Не задано 2">Не задано 2</option>
+                                                        <option value="Не задано 3">Не задано 3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputtest1" class="col-xl-3 col-form-label">Примечание</label>
+                                                <div class="col-xl-9">
+                                                    <textarea class="form-control" placeholder="Справочник используется для раздела телефонов" id="floatingTextarea2"></textarea>
                                                 </div>
                                             </div>
                                         </form>
                                     </div>
                                     <div class="control-in">
-                                        <h5>Настройки SEO</h5>
-                                        <form action="#" method="post">
-                                            <div class="row mb-3">
-                                                <label for="inputtest1" class="col-xl-3 col-form-label">Шаблон TITLE</label>
-                                                <div class="col-xl-9">
-                                                    <input type="text" class="form-control" id="inputtest1" value="{name} - плкупать у нас выгодно!">
+                                        <h5>Настройки отображения в фильтре по умолчанию</h5>
+                                        <form action="" method="post">
+                                            <div class="row filter-popup-items">
+                                                <div class="col-xl-6">
+                                                    <label class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="" checked="">
+                                                        Отображать в фильтре
+                                                    </label>
+                                                    <label class="list-group-item">
+                                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                                        Спрятать в дополнительно
+                                                    </label>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
-                                                <label class="col-xl-3 col-form-label">Шаблон KEYWORDS</label>
+                                                <label class="col-xl-3 col-form-label">Выделить жирным значения через запятую</label>
                                                 <div class="col-xl-9">
-                                                    <fieldset disabled="">
-                                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="телефоны, гаджеты, быстро, купить в РБ, самовывоз">
-                                                    </fieldset>
+                                                    <textarea class="form-control" placeholder="Красный, синий"></textarea>
                                                 </div>
                                             </div>
                                             <div class="row mb-3">
-                                                <label for="inputtest2" class="col-xl-3 col-form-label">Шаблон DESCRIPTION</label>
+                                                <label class="col-xl-3 col-form-label">Вид в фильтре</label>
                                                 <div class="col-xl-9">
-                                                    <input type="text" class="form-control" id="inputtest2" value="{name} - покупать у нас выгодно!">
-                                                </div>
-                                            </div>
-
-                                            <div class="row mb-3">
-                                                <label for="inputtest1" class="col-xl-3 col-form-label">Описание сверху</label>
-                                                <div class="col-xl-9">
-                                                    <textarea class="form-control" placeholder="Справочник используется для раздела телефонов" id="floatingTextarea1"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <label for="inputtest1" class="col-xl-3 col-form-label">Описание снизу</label>
-                                                <div class="col-xl-9">
-                                                    <textarea class="form-control" placeholder="Справочник используется для раздела телефонов" id="floatingTextarea2"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <label for="inputtest18" class="col-xl-3 col-form-label">Хлебные крошки</label>
-                                                <div class="col-xl-9">
-                                                    <div class="row">
-                                                        <div class="col direct-breadcrumbs">
-                                                            <input type="text" class="form-control" id="inputtest18" value="Главная">
-                                                        </div>
-                                                        <div class="col direct-breadcrumbs">
-                                                            <input type="text" class="form-control" id="inputtest19" value="/">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col direct-breadcrumbs">
-                                                            <input type="text" class="form-control" id="inputtest19" value="Каталог">
-                                                        </div>
-                                                        <div class="col direct-breadcrumbs">
-                                                            <input type="text" class="form-control" id="inputtest20" value="/catalog">
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col direct-breadcrumbs">
-                                                            <input type="text" class="form-control" id="inputtest21" value="Телевизоры">
-                                                        </div>
-                                                        <div class="col direct-breadcrumbs">
-                                                            <input type="text" class="form-control" id="inputtest22" value="/catalog/electronics/tv">
-                                                        </div>
-                                                    </div>
-                                                    <button type="button" class="btn btn-outline-primary">Еще</button>
+                                                    <select class="form-select" aria-label="Default select">
+                                                        <option value="Чекбоксы">Чекбоксы</option>
+                                                        <option value="Радиокнопки">Радиокнопки</option>
+                                                        <option value="3 вариант">3 вариант</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </form>
@@ -137,28 +153,36 @@
                                     <div class="control-in">
                                         <h5>Настройки</h5>
                                         <div class="control-view__id">
-                                            ID: 1
+                                            ID: 211
                                         </div>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked="">
+                                            Опубликован
+                                        </label>
                                         <label class="list-group-item mb-3">
                                             <input class="form-check-input me-1" type="checkbox" value="" checked="">
-                                            Активен
+                                            Обязательный
                                         </label>
+                                        <div class="mb-3 goods-sort">
+                                            <div class="goods-label">
+                                                Выбрать привязку к разделам
+                                            </div>
+                                            <select class="form-select" multiple="" aria-label="multiple select example">
+                                                <option value="1">Телевизоры</option>
+                                                <option value="2">Электроника</option>
+                                                <option value="3">Навигаторы</option>
+                                                <option value="5">Планшеты</option>
+                                                <option value="6">Телефоны</option>
+                                                <option value="7">Чайники</option>
+                                                <option value="8">Test</option>
+                                                <option value="9">Test</option>
+                                            </select>
+                                        </div>
                                         <div class="mb-3 goods-sort">
                                             <div class="goods-label">
                                                 Сортировка
                                             </div>
                                             <input type="text" class="form-control" id="inputName344" value="500">
-                                        </div>
-                                    </div>
-                                    <div class="control-in">
-                                        <div class="mb-3">
-                                            Список переменных для СЕО-генерации:
-                                        </div>
-                                        <div>
-                                            <div>{name} - имя товара</div>
-                                            <div>{description} - описание товара</div>
-                                            <div>{section} - раздел</div>
-                                            <div>{attr_12} - значение аттрибута id 12</div>
                                         </div>
                                     </div>
                                     <div class="control-in">

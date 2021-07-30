@@ -25,7 +25,9 @@
 .control-view__settings{
     width: 350px;
     .list-group-item{
-        margin-bottom: 1rem;
+        &:last-child{
+            margin-bottom: 1rem;
+        }
     }
 }
 

@@ -1,0 +1,1211 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    //= template/head.html
+</head>
+<body>
+	<!--LAYOUT-->
+	<div class="layout">
+		//= template/sidebar.html
+		<main class="main">
+			//= template/header.html
+			<div class="content">
+                <h1 class="h3 mb-3">Управление товарным каталогом</h1>
+                <div class="btn-toolbar justify-content-between align-items-center users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
+                    <a href="#" class="btn-toolbar-back">
+                        <i class="btn-toolbar-back__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                            </svg>
+                        </i>
+                        Назад в список
+                    </a>
+                    <div class="btn-toolbar-group">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-primary">Копировать</button>
+                            <button type="button" class="btn btn-outline-primary">Применить</button>
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                Настройки раздела
+                            </button>
+                            <button class="nav-link" id="chars-settings-tab" data-bs-toggle="tab" data-bs-target="#chars-settings" type="button" role="tab" aria-controls="chars-settings" aria-selected="false">
+                                Настройки характеристик
+                            </button>
+                            <button class="nav-link" id="nav-settings-tab" data-bs-toggle="tab" data-bs-target="#nav-settings" type="button" role="tab" aria-controls="nav-settings" aria-selected="false">
+                                Настройки SEO
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <div class="control-view">
+                                <div class="control-view__main">
+                                    <div class="control-in">
+                                        <h5>Основное</h5>
+                                        <form action="#" method="post">
+                                            <div class="row mb-3">
+                                                <label for="inputName111" class="col-xl-3 col-form-label">Название</label>
+                                                <div class="col-xl-9">
+                                                    <input type="text" class="form-control" id="inputName111" value="Фотокамеры">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputName112" class="col-xl-3 col-form-label">Символьный код</label>
+                                                <div class="col-xl-9">
+                                                    <input type="text" class="form-control" id="inputName112" value="photocameras">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label class="col-xl-3 col-form-label">Обложка</label>
+                                                <div class="col-xl-9">
+                                                    <div class="mb-3">
+                                                        <img src="https://via.placeholder.com/300x200" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputName113" class="col-xl-3 col-form-label">Описание раздела</label>
+                                                <div class="col-xl-9">
+                                                    <textarea class="form-control" placeholder="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis quibusdam deleniti minus commodi. Blanditiis harum tempora nihil tenetur perferendis possimus fuga! Itaque quo minima dignissimos sunt nulla quis ea esse.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis quibusdam deleniti minus commodi. Blanditiis harum tempora nihil tenetur perferendis possimus fuga! Itaque quo minima dignissimos sunt nulla quis ea esse." id="inputName113"></textarea>
+                                                </div>
+                                                
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="control-view__settings">
+                                    <div class="control-in">
+                                        <h5>Настройки</h5>
+                                        <div class="mb-3">
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                                Опубликован
+                                            </label>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="goods-label">
+                                                Выбрать родительский раздел
+                                            </div>
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="1">Корневой раздел</option>
+                                                <option value="2">Корневой раздел 2</option>
+                                                <option value="3">Корневой раздел 3</option>
+                                                <option value="5">Корневой раздел 4</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 goods-sort">
+                                            <div class="goods-label">
+                                                Сортировка
+                                            </div>
+                                            <input type="text" class="form-control" id="inputName344" value="500">
+                                        </div>
+                                    </div>
+                                    <div class="control-in">
+                                        <h5>История обновлений</h5>
+                                        <div class="mb-3">
+                                            <div>21.06.2021</div>
+                                            <div>Изменен:</div>
+                                            <div>sasha.fk@sila.by</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div>20.06.2021</div>
+                                            <div>Создан:</div>
+                                            <div>alex.k@sila.by</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="chars-settings" role="tabpanel" aria-labelledby="nav-settings-tab">
+                            <div class="control-view">
+                                <div class="control-view__main">
+                                    <div class="control-in">
+                                        <h5>Характеристики "Фотокамеры"</h5>
+                                        <form action="#" method="post">
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest121" value="Вес">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett1">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                            <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest122" value="Цвет">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett2">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                            <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest123" value="Диагональ экрана">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett3">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                                <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest124" value="Поддержка карт памяти">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett4">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                                <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest125" value="Интерфейсы">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett5">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                                <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3 ">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest126" value="Разрешение матрицы">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett6">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                                <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest127" value="Цифровой zoom">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett7">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                                <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest128" value="Запись видео">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett8">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                                <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest129" value="Тип матрицы">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                        <button type="button" class="btn btn-outline-primary">...</button>
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett9">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                            </svg>
+                                                        </button>
+                                                        <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                            <span class="btn-toggle-icon"></span>
+                                                        </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest130" value="Тип аккумуляторов">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                        <button type="button" class="btn btn-outline-primary">...</button>
+                                                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett10">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                            </svg>
+                                                        </button>
+                                                        <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                            <span class="btn-toggle-icon"></span>
+                                                        </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest131" value="Настройки изображения">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett11">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                                <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest132" value="Вес">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett12">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                                <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest133" value="Стабилизация изображения">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett13">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                                <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest134" value="Гарантия">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett14">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                                <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="row align-middle mb-3">
+                                                    <div class="col-xl-9">
+                                                        <input type="text" class="form-control" id="inputTest135" value="Страна производства">
+                                                    </div>
+                                                    <div class="col-xl-3">
+                                                        <div class="buttons-nowrap">
+                                                            <button type="button" class="btn btn-outline-primary">...</button>
+                                                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#sett15">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                                                                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                                                </svg>
+                                                            </button>
+                                                            <button type="button" class="btn btn-outline-primary btn-sett-toggle">
+                                                                <span class="btn-toggle-icon"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="settings-more-btn-group">
+                                                <button type="button" class="btn btn-outline-primary">Еще</button>
+                                                <button type="button" class="btn btn-primary">Создать новую характеристику</button>
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="control-view__settings">
+                                    <div class="control-in">
+                                        <h5>История обновлений</h5>
+                                        <div class="mb-3">
+                                            <div>21.06.2021</div>
+                                            <div>Изменен:</div>
+                                            <div>sasha.fk@sila.by</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div>20.06.2021</div>
+                                            <div>Создан:</div>
+                                            <div>alex.k@sila.by</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-settings" role="tabpanel" aria-labelledby="nav-settings-tab">
+                            <div class="control-view">
+                                <div class="control-view__main">
+                                    <div class="control-in">
+                                        <h5>Основное</h5>
+                                        <div class="row mb-3">
+                                            <label for="inputName111" class="col-xl-3 col-form-label">Шаблон TITLE</label>
+                                            <div class="col-xl-9">
+                                                <input type="text" class="form-control" id="inputName133" value="{name} - покупать у нас выгодно!">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="inputName111" class="col-xl-3 col-form-label">Шаблон KEYWORDS</label>
+                                            <div class="col-xl-9">
+                                                <fieldset disabled="">
+                                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="телефоны, гаджеты, быстро, купить в РБ, самовывоз">
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="inputName111" class="col-xl-3 col-form-label">Шаблон DESCRIPTION</label>
+                                            <div class="col-xl-9">
+                                                <input type="text" class="form-control" id="inputName134" value="">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="inputName111" class="col-xl-3 col-form-label">Шаблон ALT для обложки</label>
+                                            <div class="col-xl-9">
+                                                <input type="text" class="form-control" id="inputName135" value="">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="inputName111" class="col-xl-3 col-form-label">Шаблон TITLE для обложки</label>
+                                            <div class="col-xl-9">
+                                                <input type="text" class="form-control" id="inputName136" value="">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label for="inputName111" class="col-xl-3 col-form-label">Шаблон имени файла для обложки</label>
+                                            <div class="col-xl-9">
+                                                <input type="text" class="form-control" id="inputName137" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-view__settings">
+                                    <div class="control-in">
+                                        <div class="mb-3">
+                                            Список переменных для СЕО-генерации:
+                                        </div>
+                                        <div>
+                                            <div>{name} - имя товара</div>
+                                            <div>{description} - описание товара</div>
+                                            <div>{section} - раздел</div>
+                                            <div>{attr_12} - значение аттрибута id 12</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="btn-toolbar justify-content-between align-items-center users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
+                    <a href="#" class="btn-toolbar-back">
+                        <i class="btn-toolbar-back__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                            </svg>
+                        </i>
+                        Назад в список
+                    </a>
+                    <div class="btn-toolbar-group">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-outline-primary">Копировать</button>
+                            <button type="button" class="btn btn-outline-primary">Применить</button>
+                            <button type="button" class="btn btn-primary">Сохранить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="sett1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Отображение "Вес в фильтре"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel2">Отображение "Цвет"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel3">Отображение "Диагональ"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett4" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel4">Отображение "Поддержка карт"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett5" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel5">Отображение "Интерфейсы"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett6" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel6">Отображение "Разрешение матрицы"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett7" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel7">Отображение "Цифровой zoom"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett8" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel8">Отображение "Запись видео"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett9" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel9" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Отображение "Тип матрицы"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett10" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel10">Отображение "Тип аккумуляторов"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett11" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel11">Отображение "Настройки изображения"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett12" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel12">Отображение "Вес"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett13" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel13">Отображение "Стабилизация изображения"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett14" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel14">Отображение "Гарантия"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sett15" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel15">Отображение "Страна производства"</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="list-group">
+                                <form action="" method="post">
+                                    <div class="filter-popup-items">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" checked>
+                                            Отображать в фильтре
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                            Спрятать в дополнительно
+                                        </label>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Выделить жирным значения через запятую</label>
+                                        <div class="col-xl-8">
+                                            <textarea class="form-control" placeholder="Красный, синий"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-xl-4 col-form-label">Вид в фильтре</label>
+                                        <div class="col-xl-8">
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Чекбоксы">Чекбоксы</option>
+                                                <option value="Радиокнопки">Радиокнопки</option>
+                                                <option value="3 вариант">3 вариант</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</main>
+	</div><!-- END LAYOUT-->
+
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/interface.js"></script>
+</body>
+</html>
