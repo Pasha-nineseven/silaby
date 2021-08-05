@@ -80,5 +80,6 @@ var toggle = function (elem) {
 // 		<li><a href="control.html">control(20)</a></li> \
 // 		<li><a href="preset.html">preset(20)</a></li> \
 // 		<li><a href="import.html">import(21)</a></li> \
+// 		<li><a href="error.html">cr.error</a></li> \
 // 	</ol> \
 // </div>'

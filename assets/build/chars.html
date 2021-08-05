@@ -136,11 +136,76 @@
                         <span class="list-toggle-link m-down"></span>Развернуть фильтр
                     </a>
                     <div class="toggle-content" id="test">
-                        Test content for toggle filter<br>
-                        Test content for toggle filter<br>
-                        Test content for toggle filter<br>
-                        Test content for toggle filter<br>
-                        Test content for toggle filter<br>
+                        <form action="" method="post">
+                            <div class="row mb-3">
+                                <label class="col-xl-3 col-form-label">Выбрать раздел</label>
+                                <div class="col-xl-5 m-clear">
+                                    <a href="#" class="field-clear"></a>
+                                    <select class="form-select" aria-label="Default select">
+                                        <option value="Любой">Любой</option>
+                                        <option value="Раздел 1">Раздел 1</option>
+                                        <option value="Раздел 2">Раздел 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-xl-3 col-form-label">Включая подразделы</label>
+                                <div class="col-xl-5 m-clear">
+                                    <a href="#" class="field-clear"></a>
+                                    <select class="form-select" aria-label="Default select">
+                                        <option value="Не указано">Не указано</option>
+                                        <option value="подраздел 1">подраздел 1</option>
+                                        <option value="подраздел 2">подраздел 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputName32" class="col-xl-3 col-form-label">Название</label>
+                                <div class="col-xl-5 m-clear">
+                                    <a href="#" class="field-clear"></a>
+                                    <input type="text" class="form-control" id="inputName32" value="">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-xl-3 col-form-label">Опубликован</label>
+                                <div class="col-xl-5 m-clear">
+                                    <select class="form-select" aria-label="Default select">
+                                        <option value="Не указано">Не указано</option>
+                                        <option value="test 1">test 1</option>
+                                        <option value="test 2">test 2</option>
+                                    </select>
+                                    <a href="#" class="field-clear"></a>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-xl-3 col-form-label">Обновлен</label>
+                                <div class="col-xl-9">
+                                    <div class="row">
+                                        <div class="col filter-col m-clear">
+                                            <a href="#" class="field-clear"></a>
+                                            <select class="form-select" aria-label="Default select">
+                                                <option value="Диапазон">Диапазон</option>
+                                                <option value="Диапазон 1">Диапазон 1</option>
+                                                <option value="Диапазон 2">Диапазон 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col filter-col">
+                                            <input type="date" class="form-control" id="inputtest2222">
+                                        </div>
+                                        <div class="col filter-col">
+                                            <input type="date" class="form-control" id="inputtest2223">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <a href="#" class="add_field">Добавить поле</a>
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="submit" class="btn btn-outline-primary">Найти по фильтру</button>
+                                <button type="reset" class="btn btn-primary">Сбросить</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="btn-toolbar justify-content-between users-toolbar" role="toolbar" aria-label="Панель инструментов с группами кнопок">
